@@ -1,0 +1,10 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Sitemap location for search engines
+Sitemap: https://brandwox.netlify.app/sitemap.xml
+
+# Optional: Disallow admin or staging pages (uncomment if needed)
+# Disallow: /admin/
+# Disallow: /staging/
