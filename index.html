@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Character Encoding -->
     <meta charset="UTF-8" />
     
-    <!-- Google Verification (Replace CONTENT with your code) -->
+    <!-- Google Verification -->
     <meta name="google-site-verification" content="google0d562bdb8113384b" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://brandwox.netlify.app/" />
     
-    <!-- Favicon -->
+    <!-- Favicon Configuration -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -18,6 +19,11 @@
 
     <!-- Responsive Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://*.netlify.app">
     
     <!-- Primary Meta Tags -->
     <title>Brandwox | Premium Web Development & Luxury Branding Agency</title>
@@ -25,25 +31,29 @@
     <meta name="keywords" content="luxury web design, premium branding agency, high-end digital marketing, ecommerce development, corporate website redesign" />
     <meta name="author" content="Brandwox" />
     
-    <!-- Geo Tags (Optional) -->
-    <meta name="geo.region" content="IN-MH" />
-    <meta name="geo.placename" content="Mumbai" />
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN-KL" />
+    <meta name="geo.placename" content="Palakkad" />
+    <meta name="geo.position" content="10.7867;76.6548">
+    <meta name="ICBM" content="10.7867, 76.6548">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://brandwox.netlify.app/" />
     <meta property="og:title" content="Brandwox | Premium Web Development & Luxury Branding Agency" />
     <meta property="og:description" content="Elevate your digital presence with Brandwox - Award-winning web development and luxury branding solutions." />
-    <meta property="og:image" content="https://brandwox.netlify.app/images/social-preview.jpg" />
+    <meta property="og:image" content="https://brandwox.netlify.app/images/social-preview-1200x630.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    
+    <meta property="og:site_name" content="Brandwox" />
 
-    <!-- Twitter -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Brandwox | Premium Web Development & Luxury Branding Agency" />
     <meta name="twitter:description" content="Elevate your digital presence with Brandwox's award-winning digital solutions." />
-    <meta name="twitter:image" content="https://brandwox.netlify.app/images/social-preview.jpg" />
+    <meta name="twitter:image" content="https://brandwox.netlify.app/images/social-preview-1200x630.jpg" />
+    <meta name="twitter:site" content="@brandwox">
+    <meta name="twitter:creator" content="@brandwox">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -52,16 +62,23 @@
       "@type": ["Organization", "LocalBusiness"],
       "name": "Brandwox",
       "url": "https://brandwox.netlify.app/",
-      "logo": "https://brandwox.netlify.app/images/logo.jpg",
+      "logo": "https://brandwox.netlify.app/images/logo-512x512.png",
+      "image": "https://brandwox.netlify.app/images/social-preview-1200x630.jpg",
       "description": "Premium digital solutions for luxury brands and enterprises.",
-      "telephone": "+91-XXXXXXXXXX",
+      "telephone": "+91-9207509746",
+      "priceRange": "$$$",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "123 Business Tower",
-        "addressLocality": "Mumbai",
-        "addressRegion": "MH",
-        "postalCode": "400001",
+        "streetAddress": "Attassery",
+        "addressLocality": "Palakkad",
+        "addressRegion": "KL",
+        "postalCode": "679513",
         "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "10.7867",
+        "longitude": "76.6548"
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
@@ -77,8 +94,22 @@
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://brandwox.netlify.app/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://brandwox.netlify.app/search?q={search_term}",
+        "query-input": "required name=search_term"
+      }
+    }
+    </script>
+
     <!-- Preload Resources -->
     <link rel="preload" href="/src/main.tsx" as="script" />
+    <link rel="preload" href="/images/logo-512x512.png" as="image" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
