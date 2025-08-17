@@ -1,0 +1,22 @@
+# netlify.toml
+[build]
+  command = "npm run build"
+  publish = "dist" # or "build" depending on your framework
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml"
+    Cache-Control = "public, max-age=3600" # 1 hour cache
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+
+    [build.environment]
+  NODE_VERSION = "18" # Match your local version
+
+[context.production.environment]
+  VITE_API_URL = "https://brandwox.netlify.app"
