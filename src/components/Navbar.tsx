@@ -15,10 +15,16 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
+
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About Us' },
     { path: '/services', label: 'Services' },
+    { path: '/insights', label: 'Insights' },
     { path: '/testimonials', label: 'Testimonials' },
     { path: '/contact', label: 'Contact' }
   ];
@@ -74,26 +80,29 @@ const Navbar = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-gray-100/50 transition-colors duration-200"
+            aria-label="Toggle menu"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      <div className={`md:hidden transition-all duration-300 overflow-hidden ${
-        isOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
+      {/* Mobile Menu - Fixed Version */}
+      <div className={`md:hidden fixed inset-x-0 top-16 bg-white shadow-lg transition-all duration-300 ease-in-out ${
+        isOpen 
+          ? 'translate-y-0 opacity-100 visible h-[calc(100vh-4rem)]' 
+          : 'translate-y-full opacity-0 invisible h-0'
       }`}>
-        <div className="bg-white/95 backdrop-blur-md border-t border-gray-200/20">
-          <div className="px-4 py-6 space-y-4">
+        <div className="overflow-y-auto h-full pb-8">
+          <div className="px-4 py-2 space-y-2">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors duration-200 ${
+                className={`block px-4 py-3 text-lg font-medium rounded-lg transition-colors duration-200 ${
                   location.pathname === link.path
-                    ? 'bg-blue-50 text-blue-600 border border-blue-200'
+                    ? 'bg-blue-50 text-blue-600'
                     : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
                 }`}
               >
@@ -103,7 +112,7 @@ const Navbar = () => {
             <Link
               to="/contact"
               onClick={() => setIsOpen(false)}
-              className="block w-full px-4 py-3 mt-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium rounded-lg text-center transition-all duration-300 hover:shadow-lg"
+              className="block w-full px-4 py-3 mt-4 mx-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium rounded-lg text-center transition-all duration-300 hover:shadow-lg"
             >
               Get Started
             </Link>

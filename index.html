@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     
+    <!-- SEO Verification -->
     <meta name="google-site-verification" content="google0d562bdb8113384b" />
     
     <!-- Canonical URL -->
@@ -24,9 +25,10 @@
     <meta name="keywords" content="luxury web design, premium branding agency, high-end digital marketing, ecommerce development, corporate website redesign" />
     <meta name="author" content="Brandwox" />
     
-    <!-- Geo Tags (Optional) -->
-    <meta name="geo.region" content="IN-MH" />
-    <meta name="geo.placename" content="Mumbai" />
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN-KL" />
+    <meta name="geo.placename" content="Palakkad" />
+    <meta name="ICBM" content="10.7867, 76.6548" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -36,13 +38,14 @@
     <meta property="og:image" content="https://brandwox.netlify.app/images/social-preview.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    
+    <meta property="og:site_name" content="Brandwox" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Brandwox | Premium Web Development & Luxury Branding Agency" />
     <meta name="twitter:description" content="Elevate your digital presence with Brandwox's award-winning digital solutions." />
     <meta name="twitter:image" content="https://brandwox.netlify.app/images/social-preview.jpg" />
+    <meta name="twitter:creator" content="@brandwox" />
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -71,8 +74,23 @@
       "sameAs": [
         "https://www.linkedin.com/company/brandwox",
         "https://www.facebook.com/brandwox",
-        "https://www.instagram.com/brandwox_?igsh=MTR2bzRsc3E1ZXh4YQ=="
+        "https://www.instagram.com/brandwox_"
       ]
+    }
+    </script>
+
+    <!-- Blog-specific Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Brandwox",
+      "url": "https://brandwox.netlify.app/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://brandwox.netlify.app/insights?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
     </script>
 

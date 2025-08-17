@@ -1,19 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
     <loc>https://brandwox.netlify.app/</loc>
+    <lastmod>2024-03-20</lastmod>  <!-- Update this date when you make significant changes -->
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- Add other pages if you create them -->
+  
+  <!-- Key Pages -->
   <url>
     <loc>https://brandwox.netlify.app/services</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2024-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
+  
+  <url>
+    <loc>https://brandwox.netlify.app/insights</loc>  <!-- Changed from /blog to /insights -->
+    <lastmod>2024-03-20</lastmod>
+    <changefreq>daily</changefreq>  <!-- More frequent for content hubs -->
+    <priority>0.9</priority>
+  </url>
+  
   <url>
     <loc>https://brandwox.netlify.app/contact</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2024-03-20</lastmod>
+    <changefreq>yearly</changefreq>  <!-- Rarely changes -->
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Individual Blog Posts (Example - Add ALL posts) -->
+  <url>
+    <loc>https://brandwox.netlify.app/insights/psychology-of-luxury-digital-branding</loc>
+    <lastmod>2024-03-15</lastmod>  <!-- Use actual publish/update date -->
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <!-- Add other insights posts similarly -->
 </urlset>

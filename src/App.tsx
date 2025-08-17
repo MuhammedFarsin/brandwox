@@ -8,6 +8,7 @@ import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
 import TestimonialsPage from './pages/TestimonialsPage';
 import LoadingPage from './components/LoadingPage';
+import BlogPage from './pages/BlogPage';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +34,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/insights" element={<BlogPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/testimonials" element={<TestimonialsPage />} />
             <Route path="*" element={<h1 className="text-center py-10 text-2xl">404 - Page Not Found</h1>} />
