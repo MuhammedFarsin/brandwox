@@ -1,22 +1,26 @@
-# netlify.toml
+# Netlify build settings
 [build]
   command = "npm run build"
-  publish = "dist" # or "build" depending on your framework
+  publish = "dist" # change to "build" if you're using CRA
 
+# Force correct content-type for sitemap
 [[headers]]
   for = "/sitemap.xml"
   [headers.values]
     Content-Type = "application/xml"
-    Cache-Control = "public, max-age=3600" # 1 hour cache
+    Cache-Control = "public, max-age=3600"
 
+# Security headers
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
 
-    [build.environment]
-  NODE_VERSION = "18" # Match your local version
+# Set build environment
+[build.environment]
+  NODE_VERSION = "18"
 
+# Production environment variables
 [context.production.environment]
   VITE_API_URL = "https://brandwox.netlify.app"
