@@ -1,4 +1,4 @@
 # Allow all search engines to crawl the site
 User-agent: *
 Allow: /
-sitemap-pages: https://brandwox.netlify.app/sitemap-pages-pages.xml
+sitemap-pages: https://brandwox.netlify.app/sitemap-pages.xml
