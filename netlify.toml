@@ -3,9 +3,9 @@
   command = "npm run build"
   publish = "dist" # change to "build" if you're using CRA
 
-# Force correct content-type for sitemap
+# Force correct content-type for sitemap-pages
 [[headers]]
-  for = "/sitemap.xml"
+  for = "/sitemap-pages.xml"
   [headers.values]
     Content-Type = "application/xml"
     Cache-Control = "public, max-age=3600"
