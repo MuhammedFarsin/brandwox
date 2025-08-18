@@ -5,7 +5,7 @@
 
 # Force correct content-type for sitemap-pages
 [[headers]]
-  for = "/sitemap-pages.xml"
+  for = "/sitemap.xml"
   [headers.values]
     Content-Type = "application/xml"
     Cache-Control = "public, max-age=3600"
