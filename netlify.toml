@@ -19,7 +19,7 @@
 
 # Set build environment
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
 
 # Production environment variables
 [context.production.environment]
