@@ -2,7 +2,3 @@
 User-agent: *
 Allow: /
 Sitemap: https://brandwox.netlify.app/sitemap.xml
-
-# Optional: Disallow admin or staging pages (uncomment if needed)
-# Disallow: /admin/
-# Disallow: /staging/
