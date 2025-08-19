@@ -1,8 +1,5 @@
-# Allow all search engines to crawl the site
 User-agent: *
 Allow: /
+Disallow: /private/  # Example for hidden paths
 
-# Sitemap location for search engines
 Sitemap: https://brandwox.netlify.app/sitemap.xml
-
-
