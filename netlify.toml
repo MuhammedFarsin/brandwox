@@ -1,13 +1,13 @@
 # Netlify build settings
 [build]
   command = "npm run build"
-  publish = "dist" # change to "build" if you're using CRA
+  publish = "dist" # change to "build" if using CRA (Create React App)
 
-# Force correct content-type for sitemap-pages
+# Correct content-type for sitemap
 [[headers]]
   for = "/sitemap.xml"
   [headers.values]
-    Content-Type = "application/xml"
+    Content-Type = "application/xml; charset=utf-8"
     Cache-Control = "public, max-age=3600"
 
 # Security headers
@@ -15,12 +15,14 @@
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
     X-XSS-Protection = "1; mode=block"
 
-# Set build environment
+# Environment settings
 [build.environment]
   NODE_VERSION = "20"
 
-# Production environment variables
 [context.production.environment]
   VITE_API_URL = "https://brandwox.netlify.app"
