@@ -176,18 +176,23 @@ const HomePage = () => {
         <div className="absolute inset-0 overflow-hidden">
           {/* Background Video */}
           <div className="absolute inset-0 overflow-hidden">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="absolute inset-0 w-full h-full object-cover"
-            >
-              <source src="/0917.mp4" type="video/mp4" />
-            </video>
-            {/* Overlay for better contrast */}
-            <div className="absolute inset-0 bg-black/40"></div>
-          </div>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    preload="auto"         // Preload video for faster start
+    className="absolute inset-0 w-full h-full object-cover"
+  >
+    <source src="/0917.webm" type="video/webm" />  {/* Faster format */}
+    <source src="/0917.mp4" type="video/mp4" />    {/* Fallback */}
+    Your browser does not support the video tag.
+  </video>
+
+  {/* Overlay for better contrast */}
+  <div className="absolute inset-0 bg-black/40"></div>
+</div>
+
 
           <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
