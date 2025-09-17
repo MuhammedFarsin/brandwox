@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /private/  # Example for hidden paths
+
+Sitemap: https://brandwox.netlify.app/sitemap.xml
