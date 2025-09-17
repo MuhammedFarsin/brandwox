@@ -177,8 +177,8 @@ const HomePage = () => {
           {/* Background Video */}
           <div className="absolute inset-0 overflow-hidden">
            <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
-  <source src="/0917.webm" type="video/webm" />
-  <source src="/0917.mp4" type="video/mp4" />
+  <source src="/0917-1_LMf7NUZs.mp4.webm" type="video/webm" />
+  <source src="/0917-1_LMf7NUZs.mp4" type="video/mp4" />
 </video>
 
             {/* Overlay for better contrast */}
