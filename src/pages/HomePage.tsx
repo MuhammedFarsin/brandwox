@@ -176,10 +176,16 @@ const HomePage = () => {
         <div className="absolute inset-0 overflow-hidden">
           {/* Background Video */}
           <div className="absolute inset-0 overflow-hidden">
-           <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
-  <source src="/0917-1_LMf7NUZs.mp4.webm" type="video/webm" />
-  <source src="/0917-1_LMf7NUZs.mp4" type="video/mp4" />
-</video>
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover"
+            >
+              <source src="/0917-1_LMf7NUZs.mp4.webm" type="video/webm" />
+              <source src="/0917-1_LMf7NUZs.mp4" type="video/mp4" />
+            </video>
 
             {/* Overlay for better contrast */}
             <div className="absolute inset-0 bg-black/40"></div>
