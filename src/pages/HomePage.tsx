@@ -60,22 +60,22 @@ const HomePage = () => {
 
   const features: Feature[] = [
     {
-      icon: <Target className="h-8 w-8" />,
-      title: "Strategic Digital Consultation",
+      icon: <Globe className="h-8 w-8" />,
+      title: "Website Design & Optimization",
       description:
-        "Expert guidance tailored to meet your unique brand needs with precision and innovation.",
+        "We create fast, modern, and responsive websites that build trust and turn visitors into clients.",
+    },
+    {
+      icon: <Target className="h-8 w-8" />,
+      title: "Social Media Marketing",
+      description:
+        "We help brands grow on Instagram, Facebook, and LinkedIn with creative and consistent content.",
     },
     {
       icon: <Zap className="h-8 w-8" />,
-      title: "Bespoke Software Solutions",
+      title: "Ad Creation & Strategy",
       description:
-        "Custom software solutions that reflect your brand identity and drive exceptional performance.",
-    },
-    {
-      icon: <Globe className="h-8 w-8" />,
-      title: "Digital Marketing Excellence",
-      description:
-        "Innovative campaigns that captivate audiences and deliver measurable, impactful results.",
+        "We design and manage Meta and Google Ads that attract the right audience and boost conversions.",
     },
     {
       icon: <Shield className="h-8 w-8" />,
@@ -217,23 +217,23 @@ const HomePage = () => {
                   : "opacity-0 translate-y-10"
               }`}
             >
-              <span className="bg-gradient-to-r from-gray-900 via-blue-900 to-indigo-900 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-gray-100 via-blue-100 to-indigo-900 bg-clip-text text-transparent">
                 Welcome to{" "}
               </span>
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-100 via-purple-100 to-indigo-600 bg-clip-text text-transparent">
                 Brandwox the Digital Agency
               </span>
             </h1>
 
             <p
-              className={`text-lg sm:text-xl lg:text-2xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto transition-all duration-1000 delay-600 ${
+              className={`text-lg sm:text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed max-w-3xl mx-auto transition-all duration-1000 delay-600 ${
                 heroInView
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"
               }`}
             >
-              Empower Your Brand with Innovative Digital Solutions Tailored for
-              Success
+              We help businesses grow online through modern websites, social
+              media marketing, and smart ad strategies.
             </p>
 
             <div
@@ -254,7 +254,7 @@ const HomePage = () => {
 
               <Link
                 to="/services"
-                className="group px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-full hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 flex items-center space-x-2 transform hover:scale-105"
+                className="group px-8 py-4 border-2 border-gray-300 text-gray-100 font-semibold rounded-full hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 flex items-center space-x-2 transform hover:scale-105"
               >
                 <span>Explore Services</span>
                 <ChevronRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -311,10 +311,9 @@ const HomePage = () => {
               Why Choose Brandwox?
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              At Brandwox, we redefine the digital experience for businesses
-              worldwide. Our innovative digital services combine cutting-edge
-              technology with creative excellence to deliver exceptional
-              results.
+              At BrandWox, we help businesses build trust online through
+              powerful websites, engaging social media, and data-driven ad
+              campaigns that get real results.
             </p>
           </div>
 
@@ -429,7 +428,8 @@ const HomePage = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Ready to Elevate Your Brand?
+           <span>Get Your Free Digital Audit</span>
+
           </h2>
           <p className="text-lg sm:text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
             Join the ranks of successful businesses who have transformed their
