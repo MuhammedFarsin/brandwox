@@ -90,8 +90,8 @@ const ContactPage = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: 'Email Us',
-      details: 'brandwoxsolution@gmai.com',
-      link: 'mailto:brandwoxsolution@gmai.com'
+      details: 'brandwoxsolution@gmail.com',
+      link: 'mailto:brandwoxsolution@gmail.com'
     },
     {
       icon: <Phone className="h-6 w-6" />,
