@@ -38,7 +38,7 @@ const ContactPage = () => {
         company: formData.company,
         service: formData.service,
         message: formData.message,
-        to_email: 'brandwoxsolution@gmai.com'
+        to_email: 'brandwoxsolution@gmail.com'
       };
 
       await emailjs.send(
