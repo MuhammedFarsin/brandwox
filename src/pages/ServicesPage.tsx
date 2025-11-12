@@ -1,5 +1,5 @@
 import { useInView } from 'react-intersection-observer';
-import { MessageSquare, Code, TrendingUp, Sparkles, CheckCircle, ArrowRight } from 'lucide-react';
+import { TrendingUp, Sparkles, CheckCircle, ArrowRight, Megaphone, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ServicesPage = () => {
@@ -7,55 +7,62 @@ const ServicesPage = () => {
   const [servicesRef, servicesInView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   const services = [
-    {
-      icon: <MessageSquare className="h-12 w-12" />,
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-      title: 'Strategic Digital Consultation',
-      description: 'Our strategic digital consultation services are tailored to meet the unique needs of your brand. From in-depth analyses to customized strategies, we provide expert guidance to help you achieve your digital goals with precision and innovation.',
-      features: [
-        'Comprehensive Brand Analysis',
-        'Custom Digital Strategy',
-        'Market Research & Insights',
-        'Competitive Analysis',
-        'ROI Optimization',
-        'Ongoing Support & Guidance'
-      ],
-      gradient: 'from-blue-500 to-cyan-500',
-      bgGradient: 'from-blue-50 to-cyan-50'
-    },
-    {
-      icon: <Code className="h-12 w-12" />,
-      image: 'https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-      title: 'Bespoke Software Solutions',
-      description: 'Experience excellence with our bespoke software solutions designed to enhance your business operations and elevate efficiency. Our team of experts crafts personalized software solutions that reflect your brand\'s identity and drive exceptional performance.',
-      features: [
-        'Custom Web Applications',
-        'Mobile App Development',
-        'E-commerce Platforms',
-        'API Development & Integration',
-        'Cloud Solutions',
-        'Maintenance & Support'
-      ],
-      gradient: 'from-purple-500 to-pink-500',
-      bgGradient: 'from-purple-50 to-pink-50'
-    },
-    {
-      icon: <TrendingUp className="h-12 w-12" />,
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
-      title: 'Digital Marketing Excellence',
-      description: 'Step into the realm of innovative digital marketing with our comprehensive campaigns that captivate audiences and drive impactful results. From curated content strategies to advanced advertising services, we deliver solutions that resonate with your target market.',
-      features: [
-        'Strategic Content Marketing',
-        'Social Media Management',
-        'Advanced Ad Campaigns',
-        'SEO & SEM Optimization',
-        'Brand Positioning',
-        'Analytics & Reporting'
-      ],
-      gradient: 'from-green-500 to-teal-500',
-      bgGradient: 'from-green-50 to-teal-50'
-    }
-  ];
+  {
+    icon: <Globe className="h-12 w-12" />,
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1470&q=80",
+    title: "Website Design & Development",
+    description:
+      "We build fast, modern, and conversion-focused websites that give your brand a strong online presence. From landing pages to full-scale business sites, we deliver clean designs and flawless performance.",
+    features: [
+      "Responsive Website Design",
+      "Custom Development (MERN / WordPress)",
+      "E-commerce Integration",
+      "Speed Optimization",
+      "SEO-friendly Structure",
+      "Ongoing Maintenance"
+    ],
+    gradient: "from-blue-500 to-cyan-500",
+    bgGradient: "from-blue-50 to-cyan-50"
+  },
+  {
+    icon: <TrendingUp className="h-12 w-12" />,
+    image:
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80",
+    title: "Social Media Marketing",
+    description:
+      "Boost your brand’s visibility with creative and data-driven social media campaigns. We handle everything from strategy to execution — building engagement, followers, and conversions.",
+    features: [
+      "Social Media Strategy",
+      "Post Design & Scheduling",
+      "Engagement Growth",
+      "Ad Campaign Management",
+      "Analytics & Insights",
+      "Community Management"
+    ],
+    gradient: "from-pink-500 to-rose-500",
+    bgGradient: "from-pink-50 to-rose-50"
+  },
+  {
+    icon: <Megaphone className="h-12 w-12" />,
+    image:
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1470&q=80",
+    title: "Performance Ads & Lead Generation",
+    description:
+      "Get measurable results through targeted ad campaigns across Meta, Google, and other platforms. We create high-converting ads that drive traffic, leads, and sales for your business.",
+    features: [
+      "Meta & Google Ads",
+      "Audience Targeting",
+      "A/B Testing & Optimization",
+      "Conversion Tracking",
+      "Lead Funnel Creation",
+      "Detailed Ad Reporting"
+    ],
+    gradient: "from-green-500 to-teal-500",
+    bgGradient: "from-green-50 to-teal-50"
+  }
+];
+
 
   return (
     <div className="overflow-hidden">

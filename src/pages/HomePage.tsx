@@ -10,8 +10,8 @@ import {
   Quote,
   Zap,
   Target,
-  Globe,
   Shield,
+  Car,
 } from "lucide-react";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
@@ -60,94 +60,95 @@ const HomePage = () => {
 
   const features: Feature[] = [
     {
-      icon: <Globe className="h-8 w-8" />,
-      title: "Website Design & Optimization",
+      icon: <Car className="h-8 w-8" />,
+      title: "Landing Pages for Car Dealers",
       description:
-        "We create fast, modern, and responsive websites that build trust and turn visitors into clients.",
+        "We build simple, high-converting landing pages that turn website visitors into real buyer inquiries.",
     },
     {
       icon: <Target className="h-8 w-8" />,
-      title: "Social Media Marketing",
+      title: "Meta & Google Ads Strategy",
       description:
-        "We help brands grow on Instagram, Facebook, and LinkedIn with creative and consistent content.",
+        "We run ads that bring qualified leads directly to your inbox — not random clicks or fake inquiries.",
     },
     {
       icon: <Zap className="h-8 w-8" />,
-      title: "Ad Creation & Strategy",
+      title: "Follow-Up Systems",
       description:
-        "We design and manage Meta and Google Ads that attract the right audience and boost conversions.",
+        "We automate follow-ups so you never lose a potential buyer who showed interest in your cars.",
     },
     {
       icon: <Shield className="h-8 w-8" />,
-      title: "Secure & Scalable Solutions",
+      title: "Performance Tracking",
       description:
-        "Robust, future-proof digital solutions built with security and scalability at their core.",
+        "We help you understand exactly where your leads come from and how to scale your ad performance.",
     },
   ];
 
   const testimonials: Testimonial[] = [
-    {
-      id: 1,
-      name: "Sarah Johnson",
-      role: "Marketing Director",
-      company: "TechFlow Solutions",
-      image:
-        "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400",
-      content:
-        "Brandwox transformed our digital presence completely. Their strategic approach helped us increase engagement by 300%.",
-      rating: 5,
-    },
-    {
-      id: 2,
-      name: "Michael Chen",
-      role: "CEO",
-      company: "InnovateLab",
-      image:
-        "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
-      content:
-        "The custom software solution exceeded all expectations. It improved our efficiency by 40% and streamlined operations.",
-      rating: 5,
-    },
-    {
-      id: 3,
-      name: "Emily Rodriguez",
-      role: "E-commerce Director",
-      company: "StyleHub",
-      image:
-        "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400",
-      content:
-        "Working with Brandwox was a game-changer. We achieved a 250% increase in sales within just 6 months.",
-      rating: 5,
-    },
-  ];
+  {
+    id: 1,
+    name: "Arjun Mehta",
+    role: "Founder",
+    company: "Cafe Bliss",
+    image:
+      "https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&cs=tinysrgb&w=400",
+    content:
+      "Brandwox completely revamped our website and managed our social media. Within two months, our daily customer inquiries doubled. Their strategy actually works.",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Priya Nair",
+    role: "Marketing Manager",
+    company: "GlowSkin Essentials",
+    image:
+      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400",
+    content:
+      "We hired Brandwox for ad management, and our ROI jumped by 180%. They understood our target audience perfectly and delivered real conversions, not just clicks.",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Rahul Sharma",
+    role: "Owner",
+    company: "TechNexa IT Solutions",
+    image:
+      "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400",
+    content:
+      "The team at Brandwox built a fast, responsive website for our company and handled SEO brilliantly. We now rank on the first page for multiple key terms.",
+    rating: 5,
+  },
+];
+
 
   const stats: Stat[] = [
     {
       icon: <Users className="h-6 w-6" />,
-      number: 100,
+      number: 25,
       suffix: "+",
-      label: "Happy Clients",
+      label: "Dealers Helped",
       color: "from-blue-500 to-cyan-500",
     },
     {
       icon: <Award className="h-6 w-6" />,
-      number: 200,
+      number: 60,
       suffix: "+",
-      label: "Projects Completed",
+      label: "Landing Pages Built",
       color: "from-purple-500 to-pink-500",
     },
     {
       icon: <TrendingUp className="h-6 w-6" />,
-      number: 99,
-      suffix: "%",
-      label: "Client Satisfaction",
+      number: 20,
+      suffix: "+",
+      label: "Monthly Leads per Dealer",
       color: "from-green-500 to-teal-500",
     },
     {
       icon: <Sparkles className="h-6 w-6" />,
-      number: 5,
-      suffix: "+",
-      label: "Years Experience",
+      number: 95,
+      suffix: "%",
+      label: "Client Retention",
       color: "from-orange-500 to-red-500",
     },
   ];
@@ -217,11 +218,9 @@ const HomePage = () => {
                   : "opacity-0 translate-y-10"
               }`}
             >
-              <span className="bg-gradient-to-r from-gray-100 via-blue-100 to-indigo-900 bg-clip-text text-transparent">
-                Welcome to{" "}
-              </span>
+              
               <span className="bg-gradient-to-r from-blue-100 via-purple-100 to-indigo-600 bg-clip-text text-transparent">
-                Brandwox the Digital Agency
+               Helping UK Used Car Dealers Get 10–20 More Buyer Inquiries Monthly
               </span>
             </h1>
 
@@ -232,8 +231,7 @@ const HomePage = () => {
                   : "opacity-0 translate-y-10"
               }`}
             >
-              We help businesses grow online through modern websites, social
-              media marketing, and smart ad strategies.
+               Brandwox builds high-converting landing pages and ad systems that bring real leads — not just views.
             </p>
 
             <div
@@ -247,7 +245,7 @@ const HomePage = () => {
                 to="/contact"
                 className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300 flex items-center space-x-2 overflow-hidden transform hover:scale-105"
               >
-                <span className="relative z-10">Elevate Your Brand Today</span>
+                <span className="relative z-10">Get a Free Audit</span>
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </Link>
@@ -256,7 +254,7 @@ const HomePage = () => {
                 to="/services"
                 className="group px-8 py-4 border-2 border-gray-300 text-gray-100 font-semibold rounded-full hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 flex items-center space-x-2 transform hover:scale-105"
               >
-                <span>Explore Services</span>
+                <span>View Services</span>
                 <ChevronRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
             </div>
@@ -303,17 +301,28 @@ const HomePage = () => {
         </div>
       </section>
 
+       <section className="py-20 bg-gray-300">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Who We Help</h1>
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            We help <strong>UK used car dealers</strong> generate more buyer inquiries using ads + landing pages.
+            Whether you sell 5 cars or 50 per month, our system helps you attract serious buyers and grow steadily.
+          </p>
+          <p className="text-sm text-gray-500 mt-4">
+            *(Our systems also apply to other local businesses looking for steady leads.)*
+          </p>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section className="py-16 sm:py-20 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Why Choose Brandwox?
+              How We Help Dealers Win Online
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              At BrandWox, we help businesses build trust online through
-              powerful websites, engaging social media, and data-driven ad
-              campaigns that get real results.
+              We don’t just make websites — we build complete lead-generation systems designed for car dealers.
             </p>
           </div>
 
@@ -428,18 +437,17 @@ const HomePage = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-           <span>Get Your Free Digital Audit</span>
+           <span>Get Your Free Dealer Audit</span>
 
           </h2>
           <p className="text-lg sm:text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Join the ranks of successful businesses who have transformed their
-            digital presence with Brandwox's luxury solutions.
+            Find out how many more buyer leads your dealership could be getting every month — with no guesswork.
           </p>
           <Link
             to="/contact"
             className="group inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 space-x-2 transform hover:scale-105"
           >
-            <span>Start Your Transformation</span>
+            <span> Request Free Audit</span>
             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
           </Link>
         </div>
